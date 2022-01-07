@@ -4,7 +4,7 @@ import {useEffect} from 'react'
 export default function Home() {
   
   useEffect(()=>{
-    await router.push("/home/1")
+    router.push("/home/1")
   },[])
 
   return (

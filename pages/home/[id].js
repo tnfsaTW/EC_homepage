@@ -23,12 +23,13 @@ export async function getServerSideProps(context) {
     for (var i = (number - 1) * 10; i < min(length(response), number * 10); ++i) {
         posts.append(number[i])
     }
-
+    const status = number <= 0 ? false : true
+    
     return {
         props: {
             response,
             number,
-            status = number <= 0 ? false : true
+            status,
         },
     }
 }
