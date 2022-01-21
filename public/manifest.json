@@ -1,0 +1,16 @@
+{
+  "name": "台南一中選舉委員會官網",
+  "short_name": "選委會官網",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    }
+  ],
+  "start_url": "/home/1",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAFAFA",
+  "theme_color": "#6387F5"
+}
