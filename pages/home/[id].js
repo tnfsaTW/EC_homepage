@@ -29,8 +29,6 @@ function Card(props) {
     const [data, setData] = useState({})
     const [loading, setLoading] = useState(true)
 
-
-
     useEffect(() => {
         async function download() {
             const res = await fetch(props.item.download_url)
@@ -87,10 +85,10 @@ export async function getServerSideProps(context) {
 
     let posts = []
     for (let i = (number - 1) * 10; i < min(response.length, number * 10); ++i) {
-        posts.push(number[i])
+        posts.push(response[i])
     }
     const status = number > 0
-
+    console.log(posts)
     return {
         props: {
             response:posts,
